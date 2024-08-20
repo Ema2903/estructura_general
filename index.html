@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emanuel"
+    <meta name="keywords" lang="es" content="etiqueta, html, pagina,">
+    <meta name="description" lang="es" content="lista de etiqueta basica"> 
+    <title>Estructura_general</title>
+</head>
+<body>
+    <header>
+        <h1 id="inicio">Bienvenidos a Nuestra Pagina</h1>
+        <h3>estructura general del proyecto</h3>
+        <a href="#inicio"><img src="img/Logotipo 2 .png" width="150" height="150" alt="logotipo"></a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contactos">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Seccion principal del contenido-->
+    <main>
+        <section id="acerca">
+        <h2>Acerca de</h2>
+        <p>En esta seccion puedes leer sobre quien soy y que hago</p>
+        <img src="img/mi mundo a .png" width="300" height="200" alt="flores"><br>
+        <p>Video relacionado</p><br>
+        <video width="500" height="400" controls  type="mp4" src="media/Y2meta.app-¡ VIRAL OSO Comiendo Salmon en ALASKA 🐻🐟 NO APTO para personas sensibles!!.mp4"></video><br>
+        <a href="#inicio">Volver al inicio</a>
+        </section>
+        <section id="Servicios">
+            <h2>Servicios</h2>
+            <p>Ofrezco una variedad de servicios para ayudar a crecer</p>
+            <img src="img/0b6b4863-009d-40a7-9521-8f1958ece701_16-9-discover-aspect-ratio_default_1046195.jpg" width="600" height="400" alt="flores"><br>
+            <h3>Escucha este audio</h3><br>
+            <audio src="media/WhatsApp Audio 2024-08-14 at 5.14.42 PM.mpeg" controls type="mp3"></audio><br>
+            <a href="#servicios">Volver al inicio</a>
+         </section>
+         <section id="contacto">
+            <h2>Contactos</h2>
+            <p>Ponte en contacto por medio de este formulario</p>
+            <div class="contenedor">
+                <h2>Formulaio contacto</h2>
+                <form action="/enviar formulario" method="post">
+                <div class="formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="50" placeholder="Ingrese su nombre">
+                </div><br>
+                <div class="formulario">
+                    <label for="email">Correo electronico</label>
+                    <input type="email" id="email" name="email" required placeholder="tuemail@jemplo.com">
+                </div><br>
+                <div class="formulario">
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="506-3674-9078">
+                </div><br>
+                <div class="formulario">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asuton" name="asunto" required minlength="5" maxlength="100" placeholder="Motivo de su mensaje">
+                </div><br>
+                <div class="formulario">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" required minlength="10" maxlength="500" placeholder="Escriba aqui su mensaje"></textarea>
+                </div><br>
+                <input type="submit" value="Enviar">
+                </form>
+            </div><br>
+            <a href="#servicios">Volver al inicio</a>
+         </section>
+    </main>
+    <aside><!--Barra lateral con informacion adicional-->
+        <h3>Noticias recientes</h3>
+        <p>Ultimas actualizaciones sobre mis servicios y proyectos</p>
+        <img src="img/header-principal-la-rueda (1).jpg" width="250" height="150" alt="foto de artesania">
+    </aside><br>
+    <footer>
+        <p>&copy; 2024 Mi pagina web. Todos los derechos reservados</p>
+        <p><a href="http://www.ina.ac.cr">Visita nuestra web</a></p><br>
+        <a href="#inicio">Volver al inicio</a>
+    </footer>
+</body>
+</html>
